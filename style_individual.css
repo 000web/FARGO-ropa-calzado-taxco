@@ -224,7 +224,7 @@ button::after{
 #content_C1{
     background-color: #00aeef;
     display: grid;
-    grid-gap: 0.5rem;
+    grid-gap: 2rem;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "p_title p_title"
@@ -399,10 +399,12 @@ table, tr, td{
 .p_category{
     color: #2e2e2e;
     font-weight: 700;
+    padding-left: 1rem;
 }
 .p_data{
     color: #1b1b1b;
     text-align: right;
+    padding-right: 1rem;
 }
 .top_border{
     border-top: 2px solid #2e2e2e;
@@ -520,7 +522,7 @@ table, tr, td{
     #content_C1{
         background-color: #00aeef;
         display: grid;
-        grid-gap: 0.5rem;
+        grid-gap: 2rem;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "p_title p_title"
