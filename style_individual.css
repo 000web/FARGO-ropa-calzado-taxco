@@ -402,6 +402,7 @@ table, tr, td{
 }
 .p_data{
     color: #1b1b1b;
+    text-align: right;
 }
 .top_border{
     border-top: 2px solid #2e2e2e;

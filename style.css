@@ -294,15 +294,6 @@ button::after{
     text-align: center;
 }
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
-
-
-*{
-    border: 1px solid crimson;
-}
-
-
-
-
 .p_image{
     width: 300px;
     display: block;
