@@ -107,11 +107,13 @@ button::after{
     -ms-grid-columns: 1fr 1rem 1.2fr 1rem 0.8fr;
     grid-template-columns: 1fr 1.2fr 0.8fr;
         grid-template-areas:
-    "hd1 hd2 hd3";
+    "hd1 hd2 hd3"
+    "chrome_container chrome_container chrome_container";
 }
 #hd1{-ms-grid-row: 1;-ms-grid-column: 1;grid-area: hd1;}
 #hd2{-ms-grid-row: 1;-ms-grid-column: 3;grid-area: hd2;}
 #hd3{-ms-grid-row: 1;-ms-grid-column: 5;grid-area: hd3;}
+#chrome_container{-ms-grid-row: 1;-ms-grid-column: 9;grid-area: chrome_container;}
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 #hd1{
     /*LOGO Container*/
@@ -187,6 +189,39 @@ button::after{
 }
 #caballero_button{
     background-color: #00aeef;
+}
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+#chrome_container{
+    display: -webkit-box; /*CROSS-COMPATIBILITY*/
+    display: -ms-flexbox; /*CROSS-COMPATIBILITY*/
+    display: flex;
+    -webkit-box-orient: horizontal; /*CROSS-COMPATIBILITY*/
+    -webkit-box-direction: normal; /*CROSS-COMPATIBILITY*/
+        -ms-flex-direction: row; /*CROSS-COMPATIBILITY*/
+            flex-direction: row;
+    -webkit-box-align: center; /*CROSS-COMPATIBILITY*/
+        -ms-flex-align: center; /*CROSS-COMPATIBILITY*/
+            align-items: center;
+    -webkit-box-pack: center; /*CROSS-COMPATIBILITY*/
+        -ms-flex-pack: center; /*CROSS-COMPATIBILITY*/
+            justify-content: center;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#chrome_container p{
+    color: #424242;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    width: -webkit-max-content; /*CROSS-COMPATIBILITY*/
+    width: -moz-max-content; /*CROSS-COMPATIBILITY*/
+    width: max-content;
+    padding-right: 1rem;
+}
+#chrome_container img{
+    width: 110px;
 }
 /* END HEADER */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -561,7 +596,8 @@ table, tr, td{
             grid-template-areas:
         "hd1"
         "hd2"
-        "hd3";
+        "hd3"
+        "chrome_container";
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #logo{
@@ -606,7 +642,8 @@ table, tr, td{
             grid-template-areas:
         "hd1"
         "hd2"
-        "hd3";
+        "hd3"
+        "chrome_container";
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #logo{
@@ -669,7 +706,8 @@ table, tr, td{
             grid-template-areas:
         "hd1"
         "hd2"
-        "hd3";
+        "hd3"
+        "chrome_container";
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #logo{
