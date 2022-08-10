@@ -10,6 +10,7 @@ function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
+    var dots2 = document.getElementsByClassName("dot2");
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
@@ -18,8 +19,12 @@ function showSlides(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
+    for (i = 0; i < dots2.length; i++) {
+        dots2[i].className = dots2[i].className.replace(" active", "");
+    }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+    dots2[slideIndex - 1].className += " active";
 }
 // Auto Slide   if you need auto slide ,remove the commit "//"
 //var slideIndex = 0;
