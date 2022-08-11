@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -70,8 +77,8 @@ button::after{
     grid-gap: 0rem;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-        -ms-grid-rows: auto 0rem auto 0rem auto 0rem auto 0rem auto 0rem auto 0rem auto;
-            grid-template-areas:
+            -ms-grid-rows: auto 0rem auto 0rem auto 0rem auto 0rem auto 0rem auto 0rem auto;
+                grid-template-areas:
     "header"
     "buy"
     "relleno"
@@ -114,8 +121,10 @@ button::after{
     display: -ms-grid;
     display: grid;
     grid-gap: 1rem;
+    -ms-grid-columns: 1fr 1rem 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
+    -ms-grid-rows: auto 1rem auto 1rem auto;
+        grid-template-areas:
     "hd1 hd2"
     "hd3 hd3"
     "chrome_container chrome_container";
@@ -161,10 +170,19 @@ button::after{
 }
 #hd3{
     /*DAMA or CABALLERO buttons Container*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin: 0rem;
     background-color: #2e2e2e;
 }
@@ -206,24 +224,51 @@ button::after{
 }
 #sale_button{
     background-color: crimson;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #dama_button{
     background-color: #ec008c;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #caballero_button{
     background-color: #00aeef;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 #chrome_container{
@@ -345,7 +390,7 @@ button::after{
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-            grid-template-areas:
+                grid-template-areas:
     "sale"
     "caballero"
     "dama";
@@ -366,8 +411,8 @@ button::after{
     grid-gap: 2rem;
     -ms-grid-columns: 2fr 2rem 1fr;
     grid-template-columns: 2fr 1fr;
-    -ms-grid-rows: auto 2rem auto 2rem auto;
-        grid-template-areas:
+        -ms-grid-rows: auto 2rem auto 2rem auto;
+            grid-template-areas:
     "sale_1 sale_1"
     "sale_4 sale_5"
     "sale_2 sale_3";
@@ -555,7 +600,7 @@ button::after{
     display: -ms-grid;
     display: grid;
     grid-gap: 0.5rem;
-        grid-template-areas:
+            grid-template-areas:
     "sale_2_sub_1 sale_2_sub_2";
     -ms-grid-columns: 1fr 0.5rem 1fr;
     grid-template-columns: 1fr 1fr;
@@ -685,7 +730,7 @@ button::after{
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-            grid-template-areas:
+                grid-template-areas:
     "title_dama"
     "product_area_dama";
 }
@@ -698,7 +743,7 @@ button::after{
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-            grid-template-areas:
+                grid-template-areas:
     "title_caballero"
     "product_area_caballero";
 }
@@ -961,8 +1006,8 @@ table, tr, td{
     #header{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-            -ms-grid-rows: auto 1rem auto 1rem auto 1rem auto;
-                grid-template-areas:
+                -ms-grid-rows: auto 1rem auto 1rem auto 1rem auto;
+                    grid-template-areas:
         "hd1"
         "hd2"
         "hd3"
@@ -995,8 +1040,8 @@ table, tr, td{
         grid-gap: 2rem;
         -ms-grid-columns: 1fr 2rem 1fr;
         grid-template-columns: 1fr 1fr;
-        -ms-grid-rows: auto 2rem auto 2rem auto 2rem auto;
-            grid-template-areas:
+            -ms-grid-rows: auto 2rem auto 2rem auto 2rem auto;
+                grid-template-areas:
         "sale_1 sale_1"
         "sale_4 sale_5"
         "sale_3 sale_3"
@@ -1014,7 +1059,7 @@ table, tr, td{
         display: -ms-grid;
         display: grid;
         grid-gap: 0.5rem;
-            grid-template-areas:
+                grid-template-areas:
         "sale_2_sub_1 sale_2_sub_2";
         -ms-grid-columns: 1fr 0.5rem 1fr;
         grid-template-columns: 1fr 1fr;
@@ -1043,8 +1088,8 @@ table, tr, td{
     #header{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-            -ms-grid-rows: auto 1rem auto 1rem auto 1rem auto;
-                grid-template-areas:
+                -ms-grid-rows: auto 1rem auto 1rem auto 1rem auto;
+                    grid-template-areas:
         "hd1"
         "hd2"
         "hd3"
@@ -1058,7 +1103,7 @@ table, tr, td{
     #content{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-                grid-template-areas:
+                    grid-template-areas:
         "sale"
             "caballero"
         "dama";
@@ -1095,8 +1140,8 @@ table, tr, td{
         grid-gap: 2rem;
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        -ms-grid-rows: auto 2rem auto 2rem auto 2rem auto 2rem auto;
-            grid-template-areas:
+            -ms-grid-rows: auto 2rem auto 2rem auto 2rem auto 2rem auto;
+                grid-template-areas:
         "sale_1"
         "sale_4"
         "sale_5"
@@ -1115,7 +1160,7 @@ table, tr, td{
         display: -ms-grid;
         display: grid;
         grid-gap: 0.5rem;
-            grid-template-areas:
+                grid-template-areas:
         "sale_2_sub_1 sale_2_sub_2";
         -ms-grid-columns: 1fr 0.5rem 1fr;
         grid-template-columns: 1fr 1fr;
@@ -1160,8 +1205,8 @@ table, tr, td{
         grid-gap: 2rem;
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-            -ms-grid-rows: auto 2rem auto 2rem auto 2rem auto;
-                grid-template-areas:
+                -ms-grid-rows: auto 2rem auto 2rem auto 2rem auto;
+                    grid-template-areas:
         "hd1"
         "hd2"
         "hd3"
@@ -1193,7 +1238,7 @@ table, tr, td{
     #content{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-                grid-template-areas:
+                    grid-template-areas:
         "sale"
         "caballero"
         "dama";
@@ -1237,8 +1282,8 @@ table, tr, td{
         grid-gap: 2rem;
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        -ms-grid-rows: auto 2rem auto 2rem auto 2rem auto 2rem auto;
-            grid-template-areas:
+            -ms-grid-rows: auto 2rem auto 2rem auto 2rem auto 2rem auto;
+                grid-template-areas:
         "sale_1"
         "sale_4"
         "sale_5"
@@ -1257,8 +1302,8 @@ table, tr, td{
         display: -ms-grid;
         display: grid;
         grid-gap: 0.5rem;
-        -ms-grid-rows: auto 0.5rem auto;
-            grid-template-areas:
+            -ms-grid-rows: auto 0.5rem auto;
+                grid-template-areas:
         "sale_2_sub_1"
         "sale_2_sub_2";
         -ms-grid-columns: 1fr;
