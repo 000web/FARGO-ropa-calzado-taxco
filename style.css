@@ -114,17 +114,24 @@ button::after{
     display: -ms-grid;
     display: grid;
     grid-gap: 1rem;
-    -ms-grid-columns: 1fr 1rem 1.2fr 1rem 0.8fr;
-    grid-template-columns: 1fr 1.2fr 0.8fr;
-        -ms-grid-rows: auto 1rem auto;
-            grid-template-areas:
-    "hd1 hd2 hd3"
-    "chrome_container chrome_container chrome_container";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "hd1 hd2"
+    "hd3 hd3"
+    "chrome_container chrome_container";
 }
-#hd1{-ms-grid-row: 1;-ms-grid-column: 1;grid-area: hd1;}
-#hd2{-ms-grid-row: 1;-ms-grid-column: 3;grid-area: hd2;}
-#hd3{-ms-grid-row: 1;-ms-grid-column: 5;grid-area: hd3;}
-#chrome_container{-ms-grid-row: 1;-ms-grid-column: 9;grid-area: chrome_container;}
+#hd1{
+    grid-area: hd1;
+}
+#hd2{
+    grid-area: hd2;
+}
+#hd3{
+    grid-area: hd3;
+}
+#chrome_container{
+    grid-area: chrome_container;
+}
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 #hd1{
     /*LOGO Container*/
@@ -154,20 +161,12 @@ button::after{
 }
 #hd3{
     /*DAMA or CABALLERO buttons Container*/
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
     margin: 0rem;
+    background-color: #2e2e2e;
 }
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 #logo{
@@ -181,25 +180,50 @@ button::after{
     font-family: 'Albert Sans', sans-serif;
     font-size: 2.5rem;
     font-weight: 800;
+    text-align: center;
 }
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+#hd3{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#hd3 h3{
+    font-size: 1.7rem;
+}
 .index_button{
-    margin: 2rem;
+    /*margin: 2rem;*/
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
     text-decoration: none;
     border-radius: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
-    color: black;
+    color: #2e2e2e;
+    text-align: center;
+    text-shadow: 0px 0px 15px black;
+}
+#sale_button{
+    background-color: crimson;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 #dama_button{
     background-color: #ec008c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 #caballero_button{
     background-color: #00aeef;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 #chrome_container{
@@ -645,22 +669,6 @@ button::after{
     padding-right: 1rem;
     border-radius: 0.3rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1130,6 +1138,21 @@ table, tr, td{
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 
+
+@media (max-width: 650px){
+    #hd3{
+        /*DAMA or CABALLERO buttons Container*/
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    #hd3 h3, #hd3 a{
+        margin: 0.5rem;
+    }
+    /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+}
+
 @media (max-width: 570px){
     /*For VERTICAL SMARTPHONE*/
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1163,8 +1186,8 @@ table, tr, td{
             -ms-flex-direction: column;
                 flex-direction: column;
     }
-    .index_button{
-        margin: 1rem;
+    #hd3 h3, #hd3 a{
+        margin: 0.5rem;
     }
     /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
     #content{
