@@ -21,6 +21,7 @@
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Monoton', cursive*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -75,6 +76,7 @@ button::after{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Monoton', cursive*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -162,6 +164,7 @@ button::after{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Monoton', cursive*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -213,6 +216,7 @@ button::after{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Monoton', cursive*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -225,11 +229,21 @@ button::after{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
+    "sale"
     "caballero"
     "dama";
 }
+#sale{grid-area: sale;}
 #dama{grid-area: dama;}
 #caballero{grid-area: caballero;}
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+#sale{
+    background-color: #2e2e2e;
+}
+#sale h1{
+    color: white;
+}
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 #dama, #caballero{
     padding-top: 2rem;
@@ -408,6 +422,7 @@ table, tr, td{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Monoton', cursive*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -465,6 +480,7 @@ table, tr, td{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Monoton', cursive*/
 
 
 /*font-family: 'Albert Sans', sans-serif;*/
@@ -472,6 +488,7 @@ table, tr, td{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Monoton', cursive*/
 
 
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -527,6 +544,7 @@ table, tr, td{
     #content{
         grid-template-columns: 1fr;
         grid-template-areas:
+        "sale"
         "caballero"
         "dama";
     }
@@ -582,6 +600,7 @@ table, tr, td{
     #content{
         grid-template-columns: 1fr;
         grid-template-areas:
+        "sale"
         "caballero"
         "dama";
     }
@@ -605,6 +624,7 @@ table, tr, td{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Monoton', cursive*/
 
 
 /*font-family: 'Albert Sans', sans-serif;*/
@@ -612,6 +632,7 @@ table, tr, td{
 /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
 /*font-family: 'Great Vibes', cursive;*/
 /*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Monoton', cursive*/
 
 
 /* TOP BUTTON */
